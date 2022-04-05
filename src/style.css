@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+html, button {
+    font-family: 'Inter', sans-serif;
+}
+
+figcaption {
+    display: none;
+}
+
+.header {
+    background-color: #F5F5F5;
+    padding: 14px 0px;
+}
+
+.header__title {
+    color: #333333;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 14px;
+}
+
+.header__span {
+    color: #EB5757;
+    font-size: 16px
+}
+
+.header__searchArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #E0E0E0;
+    background-color: white;
+    border-radius: 8px;
+    margin: 0 16px;
+}
+
+.searchArea__input {
+    color: #E0E0E0;
+    background-color: white;
+    padding-left: 15px;
+    border-radius: 8px;
+    border: transparent;
+}
+
+.searchArea__input:focus {
+    color: black;
+    outline: none;
+}
+
+.searchArea__button {
+    border-radius: 8px;
+    height: 40px;
+    background-color: #27AE60;
+    color: white;
+    border: transparent;
+    width: 107px;
+    margin: 8px;
+}
+
+.searchArea__button:hover {
+    cursor: pointer;
+}
+
+.mainProducts {
+    overflow-x: scroll;
+    display: flex;
+    padding-left: 14px;
+    max-width: 960px;
+}
+
+.mainProducts::-webkit-scrollbar{
+    height:10px;
+}
+
+.mainProducts::-webkit-scrollbar-thumb{
+    background-color: #27AE60;
+    border-radius: 15px;
+    border: 3px solid transparent;
+}
+
+.cartProducts {
+    margin: auto;
+    width: 96%;
+    margin-top: 20px;
+}
+  
+@media screen and (min-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 115px;
+    }
+
+    .header__title {
+        margin-bottom: 0px;
+    }
+
+    .mainProducts {
+        padding-left: 115px;
+        overflow-x: hidden;
+        flex-wrap: wrap;
+        max-width: 950px;
+    }
+
+    
+}
+
+@media screen and (min-width: 1024px){
+    .cartProducts {
+        width: 266px;
+        position: absolute;
+        top: 89px;
+        right: 10px;
+    }
+
+}
+
+@media screen and (min-width: 1255px){
+    .cartProducts {
+        width: 365px;
+        position: absolute;
+        top: 88px;
+        right: 133px;
+    }
+
+}
+
